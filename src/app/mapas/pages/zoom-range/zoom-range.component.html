@@ -1,0 +1,31 @@
+<!-- si necesitaramos tener este componente 3 veces en la mismapantall, no lo podemos usar asi con el mismo id es por eso que necesitamos que este id sea dinamico para eso hacemos lo siguente y es usar una referencia local en lugarv de un id  id="mapa" esta referencia local va a cambiar dependiendo del componente-->
+
+
+<div #mapa class="mapa-container">
+    <div class="row">
+        <div class="col-12">
+            <label class="form-label">
+                 Zoom: {{zoomLevel | number:'2.0-2'}}
+                 - Ln,Lat: {{center[0]| number:'2.4-4'}}, {{center[1]| number:'2.4-4'}}
+            </label>
+            <input type="range"
+                   class="form-range"
+                   [value]="zoomLevel" 
+                   min="0"
+                   max="18"
+                   (input)="zoomCambio(zoomInput.value)"
+                   #zoomInput>
+        </div>
+    
+
+        <div class="col-12">
+            <button class="btn btn-primary" (click)="zoomOut()">
+                -
+            </button>
+
+            <button class="btn btn-primary float-end" (click)="zoomIn()">
+                +
+            </button>
+        </div>
+    </div>
+</div>
