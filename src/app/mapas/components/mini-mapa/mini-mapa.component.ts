@@ -17,6 +17,7 @@ import * as mapboxgl from 'mapbox-gl';
 })
 
 //Prueba devlop Enunez
+//Prueba develop 2 enunez
 export class MiniMapaComponent implements AfterViewInit {
 
   @Input() lngLat: [number, number] = [0,0];
