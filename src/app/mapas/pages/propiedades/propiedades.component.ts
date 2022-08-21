@@ -5,7 +5,7 @@ interface Propiedad {
   descripcion: string;
   lngLat: [number, number];
 }
-
+// haciendo pruebas en git
 @Component({
   selector: 'app-propiedades',
   templateUrl: './propiedades.component.html',
