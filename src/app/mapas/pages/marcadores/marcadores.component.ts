@@ -7,6 +7,8 @@ interface MarcadorColor{
 }
 import * as mapboxgl from 'mapbox-gl';
 
+//comentario prueba alexa
+
 @Component({
   selector: 'app-marcadores',
   templateUrl: './marcadores.component.html',
